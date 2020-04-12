@@ -1,0 +1,205 @@
+{
+  "Comandos": [
+    {
+      "cmd": [
+        "arp",
+        "-a"
+      ],
+      "admin": false,
+      "OS": [
+        "W",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "getmac"
+      ],
+      "admin": false,
+      "OS": [
+        "W"
+      ]
+    },
+    {
+      "cmd": [
+        "ipconfig",
+        "/all"
+      ],
+      "admin": false,
+      "OS": [
+        "W"
+      ]
+    },
+    {
+      "cmd": [
+        "ifconfig",
+        "-a"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "netstat",
+        "-ano"
+      ],
+      "admin": false,
+      "OS": [
+        "W",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "systeminfo"
+      ],
+      "admin": false,
+      "OS": [
+        "W",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "whoami",
+        "/all"
+      ],
+      "admin": false,
+      "OS": [
+        "W",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "net",
+        "view"
+      ],
+      "admin": false,
+      "OS": [
+        "W",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "tasklist"
+      ],
+      "admin": false,
+      "OS": [
+        "W"
+      ]
+    },
+    {
+      "cmd": [
+        "ps",
+        "-aux"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "ps",
+        "axjf"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "DumpIt.exe"
+      ],
+      "admin": false,
+      "OS": [
+        "W"
+      ]
+    },
+    {
+      "cmd": [
+        "df",
+        "-h"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "last",
+        "reboot"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "uptime"
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "find",
+        "/",
+        "-type",
+        "d",
+        "-name",
+        "\"\\.*\""
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "ss",
+        "-tunap",
+        "|",
+        "sed",
+        "\"s/[ \\t]\\+/|/g\""
+      ],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": [
+        "winpmem_v3.3.rc3.exe",
+        "--output",
+        "./image.raw"
+      ],
+      "admin": true,
+      "OS": [
+        "W"
+      ]
+    }
+  ]
+}
