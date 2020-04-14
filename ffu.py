@@ -35,7 +35,6 @@ if __name__ == '__main__':
     try:
         with open(ffc.conf.command, 'r') as cmd:
             comandos = json.load(cmd)
-        print(comandos)
     except Exception as ex:
         logging.error("Fallo archivo de comandos a ejecutar: \n" + str(type(ex)) + "\n" + str(ex.args))
         sys.exit("Erron en archivo  de comandos .json")

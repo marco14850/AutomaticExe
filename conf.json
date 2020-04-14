@@ -60,9 +60,7 @@
       ],
       "admin": false,
       "OS": [
-        "W",
-        "L",
-        "M"
+        "W"
       ]
     },
     {
@@ -178,6 +176,17 @@
     },
     {
       "cmd": [
+        "winpmem_v3.3.rc3.exe",
+        "--output",
+        "./image.raw"
+      ],
+      "admin": true,
+      "OS": [
+        "W"
+      ]
+    },
+    {
+      "cmd": [
         "ss",
         "-tunap",
         "|",
@@ -192,13 +201,24 @@
     },
     {
       "cmd": [
-        "winpmem_v3.3.rc3.exe",
-        "--output",
-        "./image.raw"
+        "ss",
+        "-tunap",
+        "|",
+        "sed",
+        "\"s/[ \\t]\\+/|/g\""
       ],
-      "admin": true,
+      "admin": false,
       "OS": [
-        "W"
+        "L",
+        "M"
+      ]
+    },
+    {
+      "cmd": ["uname", "-a"],
+      "admin": false,
+      "OS": [
+        "L",
+        "M"
       ]
     }
   ]

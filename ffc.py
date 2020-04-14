@@ -28,8 +28,10 @@ def parseo_argumentos():
     parser.add_argument('-nA', '--notAdmin',
                         help='No ejecuta cualquier comando que sea catalogado con requerimientos administrador',
                         action='store_true', default=False, required=False)
+
     gl_args = parser.parse_args()
     global conf
+    gl_args.outputDir = os.path.join(gl_args.outputDir)
     conf = gl_args
     imprimir_mensaje("Argumentos con exito")
     crear_directorio()
@@ -42,8 +44,9 @@ def imprimir_mensaje(msg):
 
 
 def guardar_salida(comando, resultado, outputDir):
-    with open(outputDir + '\\' + comando.replace("\\", "").replace("/", "").replace(".", "").replace("\"", "").replace(
-            "'", "") + '.txt', 'w') as out:
+    dir = os.path.join(outputDir, comando.replace("\\", "").replace("/", "").replace(".", "").replace("\"", "").replace(
+            "'", "") + '.txt' )
+    with open(dir , 'w') as out:
         out.write(resultado)
 
 
